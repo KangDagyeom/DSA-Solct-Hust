@@ -16,5 +16,3 @@ int main() {
 	cout<<"Trong luong day con lon nhat la: "<<maxSum<<endl;
 	return 0;
 }
-
-
