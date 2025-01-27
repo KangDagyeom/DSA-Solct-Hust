@@ -60,9 +60,18 @@ void Recursion() {
 	int maxSum = maxSub(a, 0, n - 1);
 	cout << "De quy: Trong luong day con lon nhat = " << maxSum << endl;
 }
-
+void DynamicProgramming(){
+	int ei = a[0];
+	int si = a[0];
+	for(int i = 1;i <= n-1;i++){
+		ei = max(a[i],a[i]+ei);
+		si = max(si,ei);
+	}
+	cout<<"Phuong phap quy hoach dong: Trong luong day con lon nhat = "<<si<<endl;
+}
 int main() {
 	DuyetToanBoCoCaiTien();
 	Recursion();
+	DynamicProgramming();
 	return 0;
 }
