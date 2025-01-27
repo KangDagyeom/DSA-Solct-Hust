@@ -75,3 +75,12 @@ int main() {
 	DynamicProgramming();
 	return 0;
 }
+//Ket luan
+/*
+| Thuật toán               | Độ phức tạp | n=10⁴  | Thời gian     | n=10⁵  | Thời gian     |
+|--------------------------|-------------|--------|---------------|--------|---------------|
+| Duyệt toàn bộ            | n³          | 10¹²   | 2.7 giờ       | 10¹⁸   | 115 ngày      |
+| Duyệt toàn bộ có cải tiến| n²          | 10⁸    | 1 giây        | 10¹²   | 2.7 giờ       |
+| Đệ quy (Recursive)       | n log n     | 1.33*10⁵ | 10³ giây    | 1.99*10⁷ | 2*10^-1 giây  |
+| Quy hoạch động (Dynamic programming) | n | 10⁴    | 10⁴ giây    | 10^6    | 2*10^-2 giây    |
+*/
